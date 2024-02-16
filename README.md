@@ -44,7 +44,7 @@ This project is a dynamic AI chatbot that can be trained from various sources, s
 - Integration with popular messaging platforms and chat applications
 
 ## How to run
-- Clone the repository. `git clone https://github.com/shamspias/customizable-gpt-chatbot`
+- Clone the repository. `git clone https://github.com/catlover75926/real-time-data-chatbot`
 - Install the required packages by running `pip install -r requirements.txt`
 - Run celery `celery -A config worker --loglevel=info`
 - Run the command `python manage.py runserver`
@@ -54,17 +54,3 @@ In linux and mac need to install 'sudo apt install python3-dev -y`
 1. Make sure that you have the development libraries for libcurl installed on your system. You can install them by running the following command: `sudo apt-get install libcurl4-openssl-dev gcc libssl-dev -y`
 2. Make sure that you have the latest version of pip and setuptools installed by running the following command: `pip install --upgrade pip setuptools`
 3. `pip install pycurl`
-
-## Deployment
-The chatbot can be deployed on Heroku or AWS by following the standard procedures for Django deployment on these platforms.
-
-## Issues
-- If you don't use AWS SQS then no need to install `pycurl` and `boto3` packages.
-- If you don't use AWS S3 then no need to install `django-storages` package.
-
-## Note
-Make sure that you have API key from OpenAI before running the project.
-
-This is just a basic implementation of the project, you can always add more features and customization according to your requirement.
-
-Enjoy!
